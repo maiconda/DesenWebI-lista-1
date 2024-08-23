@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>EX 2</title>
+</head>
+<body>
+    <button onclick="toggleMode()" id="mode-button"></button>
+    <nav>
+        <div class="container">
+            <div>
+                <input type="text" name="" id="tarefa">
+                <button type="button" onclick="adicionarTarefa()">Adicionar</button>
+            </div>
+            <div>
+                <input type="text" name="" id="filtro">
+                <button type="button" onclick="filtrarTarefas()">Filtrar</button>
+                <button type="button" onclick="removerFiltro()">Remover Filtro</button>
+            </div>
+        </div>
+    </nav>
+    <header class="container">
+        <div id="filtroDiv"></div>
+    </header>
+    <main class="container">
+        <section>
+            <h2>Tarefas Pendentes</h2>
+            <ul id="listaTarefasPendentes"></ul>
+        </section>
+<section>
+    <h2>Tarefas Concluídas</h2>
+    <ul id="listaTarefasConcluidas"></ul>
+</section>
+
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

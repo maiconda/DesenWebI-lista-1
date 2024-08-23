@@ -1,0 +1,80 @@
+body.light{
+    background-color: red;
+}
+
+nav{
+    background-color: white;
+    padding: 20px;
+}
+
+nav div div{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+nav input{
+    flex: 1;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    height: 35px;
+}
+
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+main section h2{
+    text-align: center;
+}
+
+main section ul{
+    padding: 0;
+}
+
+main section li{
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#mode-button{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    border-radius: 100%;
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}

@@ -1,23 +1,68 @@
-body.light{
-    background-color: red;
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+body.light, body.light nav input, body.light nav button{
+    background-color: rgb(226, 226, 226);
+    transition: .2s;
+}
+
+body.dark, body.dark nav input, body.dark nav button{
+    background-color: rgb(68, 68, 68);
+    transition: .2s;
+}
+
+body.light nav button, body.light main h2, body.light main li, body.light nav input, body.light #filtroDiv p{
+    color: black;
+    transition: .2s;
+}
+
+body.dark nav button, body.dark main h2, body.dark main li, body.dark nav input, body.dark #filtroDiv p{
+    color: white;
+    transition: .2s;
+}
+
+body.light nav, body.light main li, body.light #mode-button{
+    background-color: white;
+}
+
+body.dark nav, body.dark main li, body.dark #mode-button{
+    background-color: black;
 }
 
 nav{
-    background-color: white;
-    padding: 20px;
+    padding: 20px 0;
+}
+
+nav button{
+    border: none;
+    padding: 0px 13px;
+    border-radius: 6px;
+    flex: 1;
+    font-size: 15px;
+    line-height: 16px;
+    cursor: pointer;
+    font-weight: 500;
 }
 
 nav div div{
     display: flex;
     gap: 10px;
     margin-bottom: 10px;
+    flex-wrap: wrap
 }
 
 nav input{
-    flex: 1;
+    flex: 3;
     border: none;
     background-color: rgb(214, 214, 214);
-    height: 35px;
+    height: 45px;
+    border-radius: 6px;
+    padding: 0 10px;
+}
+
+nav input:focus{
+    outline: none;
 }
 
 
@@ -46,8 +91,19 @@ main section li{
     background-color: white;
     margin-bottom: 10px;
     padding: 10px;
+    padding-left: 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+}
+
+main section li button{
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 #mode-button{
@@ -59,6 +115,30 @@ main section li{
     right: 0;
     margin: 30px;
     border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+
+#listaTarefasPendentes button{
+    background-color: green;
+}
+
+#listaTarefasConcluidas button{
+    background-color: red;
+}
+
+#filtroDiv p{
+    margin-top: 30px;
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 

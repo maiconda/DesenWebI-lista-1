@@ -43,6 +43,7 @@ nav button{
     line-height: 16px;
     cursor: pointer;
     font-weight: 500;
+    min-height: 45px;
 }
 
 nav div div{
@@ -108,8 +109,8 @@ main section li button{
 
 #mode-button{
     position: fixed;
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     background-color: rgb(255, 255, 255);
     bottom: 0;
     right: 0;
@@ -117,7 +118,7 @@ main section li button{
     border-radius: 100%;
     border: none;
     cursor: pointer;
-    padding: 13px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;

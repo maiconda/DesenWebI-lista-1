@@ -1,0 +1,24 @@
+.cart-product {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    max-width: 400px;
+    text-align: center;
+}
+.cart-product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.cart-product h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.cart-product p {
+    font-size: 16px;
+    color: #555;
+}
+.cart-product span {
+    font-weight: bold;
+}

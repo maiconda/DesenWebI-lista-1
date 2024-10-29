@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../utils/normalize.css">
+        <link rel="stylesheet" href="../utils/navbar.css">
+        <link rel="stylesheet" href="checkout.css">
+    <title>EX 6</title>
+</head>
+<body>
+    <nav>
+        <div class="container nav-div">
+            <a href="../index.html">E-commerce</a>
+            <div>
+                <a href="../cart/cart.html">Cart</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+    <section class="checkout container">
+        <h1>Checkout</h1>
+    
+        <div class="total-container">
+            <h2>Price:</h2>
+            <p id="total-price">R$ 0,00</p>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="123 Main St" required>
+        </div>
+
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="New York" required>
+        </div>
+
+        <div class="form-group">
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" placeholder="NY" required>
+        </div>
+
+        <div class="form-group">
+            <label for="zip">ZIP Code:</label>
+            <input type="text" id="zip" name="zip" placeholder="10001" required>
+        </div>
+
+        <div class="form-group">
+            <label for="card">Credit Card Number:</label>
+            <input type="text" id="card" name="card" placeholder="1234 5678 9012 3456" required>
+        </div>
+
+        <div class="form-group">
+            <label for="expiry">Expiry Date:</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+        </div>
+
+            <a href="../index.html"><button type="submit" class="confirm-button">Buy</button></a>
+    </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quaerat dicta porro rerum neque doloremque reprehenderit a quia, omnis, unde provident dolores tempore ipsum, quidem.</p>
+            </div>
+    
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: email@email.com</p>
+                <p>Phone: 1234 1234</p>
+                <p>Address: Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+    
+            <div class="footer-section follow-us">
+                <h2>Follow Us</h2>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 E-commerce.</p>
+        </div>
+    </footer>
+</body>
+<script src="checkout.js"></script>
+</html>

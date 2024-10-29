@@ -1,28 +1,39 @@
 function loadCart() {
-    // Recupera o carrinho do localStorage
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-    // Seleciona o div onde os produtos serão exibidos
     const cartProductsDiv = document.getElementById('cart-products');
 
-    // Verifica se o carrinho está vazio
     if (cart.length === 0) {
         cartProductsDiv.innerHTML = '<p>Your cart is empty</p>';
     } else {
-        // Para cada produto no carrinho, cria um elemento para exibi-lo
-        cart.forEach(product => {
+        cart.forEach((product, index) => {
             const productDiv = document.createElement('div');
             productDiv.classList.add('cart-product');
             productDiv.innerHTML = `
                 <img src="${product.thumbnail}" alt="${product.title}">
+                <div>
                 <h2>${product.title}</h2>
                 <p>${product.description}</p>
                 <span>Price: $${product.price}</span>
+                <button class="remove-btn" data-index="${index}">Remove</button>
+                </div>
             `;
             cartProductsDiv.appendChild(productDiv);
+        });
+
+        document.querySelectorAll('.remove-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const productIndex = this.getAttribute('data-index');
+                removeFromCart(productIndex);
+            });
         });
     }
 }
 
-// Carrega o carrinho ao carregar a página
+function removeFromCart(index) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.splice(index, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    loadCart();
+}
+
 loadCart();
